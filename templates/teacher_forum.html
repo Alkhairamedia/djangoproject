@@ -1,0 +1,62 @@
+{% extends 'mainframe.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+   
+<!--            navbar        -->
+{% load static %}
+<header class="header pt-1 pb-2 px-3 m-0 header_top" id="header">
+  
+       <!-- LOGO -->
+
+       <div class="d-flex flex-column align-items-center">
+         <a class="navbar-brand rounded-5 " id="header_logo" href="">
+            <figure class="" id="header_logo">
+               <img class="fig_logo" src="{% static 'images/logo.png' %}" alt="company logo" width="350" height="350" />
+            </figure>
+         </a>
+         <p class="profile_name text-secondary"><a class="profile_link p-0 text-secondary" href="">Hello, {{request.user}}</a></p>
+      </div>
+
+       <!-- TITTLE -->
+ 
+  <h1 class="header_tittle nowrap center fw-bold display-5" id="header_tittle"> Build it up</h1>
+
+      <!--............ MEENU BUTTON.............. -->
+
+  <section class="menu" id="menu">
+    <!-- BUTTON -->
+    <button class="menu_button">
+      <div class="menu_icon"></div>
+    </button>
+    <!-- NAV -->
+    <nav class="header_nav" id="header_nav">
+     <ul class="nav_list">
+       <li> <a href="{% url 'teacher' %}">Dashboard</a></li>
+       <li> <a href="{% url 'about' %}">About </a></li>
+       <li> <a href="{% url 'news' %}">News</a></li>
+       </ul>
+     </nav>
+  </section>
+</header>
+<!--              navbar end         -->
+
+
+
+<div class="cntainer-fluid">
+   <div class=" row p-0 m-0">
+
+        
+
+<p class="p-5">yuor Notification is here</p>
+   </div>
+</div>
+   
+
+
+
+
+{% endblock %}

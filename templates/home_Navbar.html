@@ -1,0 +1,33 @@
+{% load static %}
+<header class="header pt-1 pb-2 px-3 m-0 header_top" id="header">
+  
+       <!-- LOGO -->
+
+  <a class="navbar-brand rounded-5" id="header_logo" href="">
+    <figure class="">
+      <img class="fig_logo" src="{% static 'images/logo.png' %}" alt="company logo" width="350" height="350" />
+    </figure>
+  </a>
+
+       <!-- TITTLE -->
+ 
+  <h1 class="header_tittle nowrap center  display-5" id="header_tittle"> Build it up</h1>
+
+      <!--............ MEENU BUTTON.............. -->
+
+  <section class="menu" id="menu">
+    <!-- BUTTON -->
+    <button class="menu_button">
+      <div class="menu_icon"></div>
+    </button>
+    <!-- NAV -->
+    <nav class="header_nav" id="header_nav">
+     <ul class="nav_list">
+       <li> <a href="{% url 'home' %}">home</a></li>
+       <li> <a href="{% url 'loginpage' %}">Login</a></li>
+       <li> <a href="{% url 'about' %}">About </a></li>
+       <li> <a href="{% url 'news' %}">News</a></li>
+       </ul>
+     </nav>
+  </section>
+</header>

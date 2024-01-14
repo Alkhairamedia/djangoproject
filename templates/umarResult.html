@@ -1,0 +1,130 @@
+{% extends 'mainframe.html' %}
+{% load static %}
+
+{% block content %}
+   
+<!--            navbar        -->
+{% include 'home_Navbar.html' %}
+<!--              navbar end         -->
+
+
+
+<div class="cntainer-fluid">
+   <div class=" row ">
+      <!-- left         side bar          -->
+      {% include 'sidebar.html' %}
+      <!-- left         side barend          -->
+
+
+      <!-- right -->
+      <div class="col col-md-9 col-xl-10">
+
+         <table class="table table-primary table-striped-columns  table-hover  caption-top">
+            <caption class="text-center fw-bold text-uppercase h4">best students of the year (2023 session)</caption>
+            
+            <thead>
+               <tr class="text-capitalize"><th class="fw-bold p-2" colspan="4">name : umar Abdullah Opeyemi</th></tr>
+               
+               <tr class="text-capitalize"><th class="fw-bold p-2" colspan="4"><span class="l">class : SSS3.</span> <span class="r">department: science</span> </th></tr>
+
+               <tr class="text-capitalize"><th class="fw-bold p-2" colspan="4"><span class="l">age : 16years.</span> <span class="r">hobby: love reading quran</span></th></tr>
+
+               <tr class="text-capitalize"><th class="fw-bold p-2" colspan="4"><span class="l">total point :1095.</span> <span class="r">position : 1st</span></th></tr>
+
+               <th class="fw-bold p-2 text-capitalize">marks(%) / <br>
+               subjects</th>
+               <th class="fw-bold p-2">40%</th>
+               <th class="fw-bold p-2">60%</th>
+               <th class="fw-bold p-2">100%</th>
+               <th class="fw-bold p-2">grades</th>
+            </thead>
+
+            <tbody>
+            <tr>
+               <td class="p-2 text-capitalize">english</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">mathematics</td>
+               <td class="p-2">39</td>
+               <td class="p-2">60</td>
+               <td class="p-2">99</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">physics</td>
+               <td class="p-2">40</td>
+               <td class="p-2">58</td>
+               <td class="p-2">98</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">chemistry</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">biology</td>
+               <td class="p-2">35</td>
+               <td class="p-2">60</td>
+               <td class="p-2">85</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">further-mathematics</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">geography</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">agric science</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">economics</td>
+               <td class="p-2">40</td>
+               <td class="p-2">60</td>
+               <td class="p-2">100</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+            <tr>
+               <td class="p-2 text-capitalize">technical drawing</td>
+               <td class="p-2">36</td>
+               <td class="p-2">58</td>
+               <td class="p-2">94</td>
+               <td class="p-2 text-uppercase">a</td>
+            </tr>
+
+         </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+   
+   {% endblock %}
+

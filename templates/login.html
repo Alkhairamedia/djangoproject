@@ -1,0 +1,83 @@
+{% extends 'mainframe.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+   
+<!--            navbar        -->
+{% include 'home_Navbar.html' %}
+<!--              navbar end         -->
+
+
+
+<div class="cntainer-fluid login_page">
+
+
+            <div class=" bg-primary mt-3">
+                  <h3 class="text-center p-2 bg-primary m-0 tittle"> Login here </h3>
+
+                  <p2 class="text-center p-2 bg-secondary fw-bold d-block">Select admin, staffs, students or parents to login</p2>
+
+            </div>
+
+         <!-- form card -->
+         <div class="form_container d-flex justify-content-center align-items-center">
+               <div class="user_card bg-primary my-5 mx-2">
+                  <div class="d-flex justify-content-center">
+                     <h3>LOGIN</h3>
+                  </div>
+                  <div class="d-flex justify-content-center form_container" >
+                  <form action="" method="post">
+                     {% csrf_token %}
+                     <div class="input-group mb-3">
+                        <div class="inpu-group-append me-1">
+                           <span class="input-group-text"><i class="p-1 bi bi-tag"></i></span>
+                        </div>
+                        <select name="category" class="form-select form-select-lg">
+                           <option  value="admin">Admin</option>
+                           <option value="staff" selected> Staff </option>
+                           <option value="student">Students</option>
+                           <option value="parent">Parent</option>
+                        </select>
+                     </div>
+                     <div class="input-group mb-3">
+                        <div class="inpu-group-append me-1">
+                           <span class="input-group-text"><i class="p-1 bi bi-person"></i></span>
+                        </div>
+                        <input type="text" name="username"
+                        placeholder="Username"  class="form-control">
+                     </div>
+                     <div class="input-group mb-2">
+                        <div class="inpu-group-append me-1">
+                           <span class="input-group-text"><i class="p-1 bi bi-lock"></i></span>
+                        </div>
+                        <input type="password" name="password"
+                        placeholder="Password"  class="form-control">
+                     </div>
+
+                     <div class="d-flex justify-content-center mt-3 login_container ">
+                        <input type="submit" 
+                        value="Login" class="btn btn-outline-primary px-5 py-1  fw-bold">
+                     </div>
+                  </form></div>
+                  
+                  {% for message in messages %}
+                     <p id="messages">{{message}}</p>
+                  {% endfor %}
+
+                  <div class="mt-4 d-flex no-wrap justify-content-center text-center text-warning">
+                     Don't have an account? contact your Admin
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+</div>
+
+
+{% endblock %}

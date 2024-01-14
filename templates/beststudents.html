@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>my school best students</title>
+   <!-- using CDN link (content delivery network) -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+<!-- using downloaded link -->
+<link rel="stylesheet" href="{% static '/css/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css' %}">
+
+<!-- custom css -->
+   <link rel="stylesheet" href="{% static '/css/myschool.css' %}">
+</head>
+<body>
+<!-- nav bar -->
+{% include 'Navbar.html' %}
+<!-- nav bar end -->
+
+
+   <!-- main body -->
+
+   <div class="container-fluid p-0">
+      <div class=" row ">
+         <!-- left & side bar -->
+         {% include 'sidebar.html' %}
+      
+   <!-- sidebar end -->
+
+         <!-- right -->
+         <div class="col col-md-9 col-xl-10">
+            <table class="table-primary table-striped-columns  table-hover caption-top">
+               <caption class="text-center fw-bold text-uppercase h4">best students of the year (2023 session)</caption>
+               <thead>
+                  <th class="fw-bold px-1">name</th>
+                  <th class="fw-bold px-1">age</th>
+                  <th class="fw-bold px-1">gender</th>
+                  <th class="fw-bold px-1">class</th>
+                  <th class="fw-bold px-1">position</th>
+                  <th class="fw-bold px-1">state of origin</th>
+                  <th class="fw-bold px-1">hobbies</th>
+               </thead>
+               <tbody class="table-group-divider">
+               <tr>
+                  <td class="pb-2 ps-2"><a class="d-block fw-bold text-decoration-none" href="{% static 'umarResult.html' %}">umar abdullah opeyemi</a></td>
+                  <td class="pb-2 ps-2">12years</td>
+                  <td class="pb-2 ps-2">male</td>
+                  <td class="pb-2 ps-2">sss3</td>
+                  <td class="pb-2 ps-2">1st position</td>
+                  <td class="pb-2 ps-2">oyo state</td>
+                  <td class="pb-2 ps-2">reading quran</td>
+               </tr>
+   
+               <tr>
+                  <td class="pb-2 ps-2"><a class="d-block fw-bold text-decoration-none" href="{% static 'umarResult.html' %}">yusuf abubakr abiodun</a></td>
+                  <td class="pb-2 ps-2">12years</td>
+                  <td class="pb-2 ps-2">male</td>
+                  <td class="pb-2 ps-2">sss3</td>
+                  <td class="pb-2 ps-2">2nd position</td>
+                  <td class="pb-2 ps-2">oyo state</td>
+                  <td class="pb-2 ps-2">reading quran</td>
+               </tr>
+   
+               <tr>
+                  <td class="pb-2 ps-2"><a class="d-block fw-bold text-decoration-none" href="{% static 'umarResult.html' %}">umar abdullah opeyemi</a></td>
+                  <td class="pb-2 ps-2">12years</td>
+                  <td class="pb-2 ps-2">male</td>
+                  <td class="pb-2 ps-2">sss3</td>
+                  <td class="pb-2 ps-2">3rd position</td>
+                  <td class="pb-2 ps-2">oyo state</td>
+                  <td class="pb-2 ps-2">reading quran</td>
+               </tr>
+   
+               <tr>
+                  <td class="pb-2 ps-2"><a class="d-block fw-bold text-decoration-none" href="{% static 'umarResult.html' %}">yusuf abubakr abiodun</a></td>
+                  <td class="pb-2 ps-2">12years</td>
+                  <td class="pb-2 ps-2">male</td>
+                  <td class="pb-2 ps-2">sss2</td>
+                  <td class="pb-2 ps-2">1st position</td>
+                  <td class="pb-2 ps-2">oyo state</td>
+                  <td class="pb-2 ps-2">reading quran</td>
+               </tr>
+            </tbody>
+            </table>
+         </div>
+         </div>
+      </div>
+   </div>
+
+<!--                          footer                      -->
+{% include 'footer.html' %}
+<!--                      footer end                          -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
